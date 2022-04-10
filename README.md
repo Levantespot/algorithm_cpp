@@ -1,12 +1,22 @@
-# algorithm_cpp
+# 算法知识与模板
 
-[toc]
-
-## 算法模板
+Language : c++
 
 ### 数据结构
 
-- [二进制](data_structure\binary_op.md)
-- [栈和队列](data_structure\stack_queue.md)
-- [链表](data_structure\linked_list.md)
-- [二叉树](data_structure\binary_tree.md)
+- [位操作](data_structure\Bitwise_Operator.md)
+- [栈和队列](data_structure\Stack_and_Queue.md)
+- [顺序表](data_structure\List.md)
+- [树](data_structure\Tree.md)
+- [图](data_structure\Graph.md)
+- [散列表](data_structure\Hash.md)
+- [串](data_structure\String.md)
+
+### 算法模板
+
+pass
+
+### 参考
+
+- [algorithm-pattern-c](https://github.com/binzi56/algorithm-pattern-c)
+- [fucking-algorithm](https://github.com/labuladong/fucking-algorithm)
