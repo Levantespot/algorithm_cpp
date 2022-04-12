@@ -14,7 +14,11 @@ Language : c++
 
 ### 算法模板
 
-pass
+- [五大基本算法](algorithm/Basic_algorithm)
+
+  动态规划、分而治之、贪心算法、回溯法、分支界限
+
+- pass
 
 ### 参考
 
