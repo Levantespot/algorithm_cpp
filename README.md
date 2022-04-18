@@ -14,9 +14,12 @@ Language : c++
 
 ### 算法模板
 
-- [五大基本算法](algorithm/Basic_algorithm)
-
-  动态规划、分而治之、贪心算法、回溯法、分支界限
+- 五大基本算法
+  - [动态规划](algorithm/Dynamic_Programming.md)
+  - [分而治之](algorithm/Divide_and_Conquer.md)
+  - [贪心算法](algorithm/Greedy_Algorithm.md)
+  - [回溯法](algorithm/Back_Tracking_Method.md)
+  - [分支界限](algorithm/Branch_and_Bound.md)
 
 - pass
 

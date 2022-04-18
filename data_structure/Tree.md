@@ -4,6 +4,214 @@
 
 
 
+### 前序遍历
+
+- 先访问根节点，且只在第一次访问时访问值；
+- 可以使用栈代替递归方法
+
+```c++
+/* Recursive way */
+void preorderHelper(TreeNode *node){
+    if(node == nullptr) return;
+    result.push_back(node->val);
+    preorderHelper(node->left);
+    preorderHelper(node->right);
+}
+
+/* Iterative way 1 */
+// 思路是，只要当前节点非空，就把其左孩子依次入栈；空则转向空节点的父亲节点的右孩子，重复之前的操作。
+vector<int> preorderTraversal(TreeNode* root) {
+    vector<int> result;
+    stack<TreeNode*> s;
+    TreeNode *p;
+
+    p = root; // 首先指向根节点
+    while (p || !s.empty()) {
+        if (p) { // 当 p 非空，才入栈、输出、并指向左节点，通过这一步可以把左节点全压入栈
+            s.push(p);
+            result.push_back(p->val);
+            p = p->left;
+        } else { // p 为空了，说明父亲节点没有左孩子了，转向其右孩子，并弹出父节点
+            p = s.top();
+            s.pop();
+            p = p->right;
+        }
+    }
+    return result;
+}
+
+/* Iterative way 2 */
+vector<int> preorderTraversal(TreeNode* root) {
+    vector<int> result;
+    if (!root) return result;
+
+    stack<TreeNode*> s;
+
+    TreeNode *p;
+    s.push(root);
+    while (!s.empty()) {
+        p = s.top();
+        s.pop();
+
+        result.push_back(p->val);
+        // 先压入右节点，再压入左节点，非常巧妙。
+        if (p->right) s.push(p->right);
+        if (p->left) s.push(p->left);
+    }
+    return result;
+}
+```
+
+
+
+### 中序遍历
+
+- 先左节点，再根节点，最后右节点
+- 在第二次访问节点时才访问值
+- 可以用栈实现非递归算法
+
+```c++
+/* 递归算法 */
+void inOrder(TreeNode* root, vector<int> &results) {
+    if (!root) return;
+    inOrder(root->left, results);
+    results.push_back(root->val);
+    inOrder(root->right, results);
+}
+
+vector<int> inorderTraversal(TreeNode* root) {
+    vector<int> results;
+    inOrder(root, results);
+    return results;
+}
+
+/* 循环算法 1 */
+// 和先序的区别在于访问节点值的时机、
+vector<int> inorderTraversal(TreeNode* root) {
+    vector<int> results;
+    stack<TreeNode*> s;
+    TreeNode *p = root;
+
+    while(p || !s.empty()){
+        if (p) {
+            s.push(p);
+            p = p->left;
+        } else {
+            p = s.top();
+            results.push_back(p->val);
+            s.pop();
+            p = p->right;
+        }
+    }
+
+    return results;
+}
+```
+
+
+
+### 后序遍历
+
+- 先左节点，再右节点，最后根节点
+- 在第三次访问节点时才访问值
+- 可以用栈实现非递归算法
+
+```c++
+/* 递归算法 */
+void postOrder(TreeNode* root, vector<int> &results) {
+    if (!root) return;
+    postOrder(root->left, results);
+    postOrder(root->right, results);
+    results.push_back(root->val);
+}
+
+vector<int> postorderTraversal(TreeNode* root) {
+    vector<int> results;
+    postOrder(root, results);
+    return results;
+}
+
+/* 循环算法 1 */
+vector<int> postorderTraversal(TreeNode* root) {
+    vector<int> results;
+    stack<TreeNode*> s;
+    TreeNode *p = root, *r = nullptr; // r 指向刚才访问过的右孩子
+
+    while(p || !s.empty()) {
+        if (p) { // 向左
+            s.push(p);
+            p = p->left;
+        } else { // 向右
+            p = s.top();    
+            if (p->right && r != p->right) {
+                p = p->right;
+            } else {
+                results.push_back(p->val);
+                r = p;
+                s.pop();
+                p = nullptr;
+            }
+        }
+    }
+    return results;
+}
+```
+
+
+
+### 层序遍历
+
+- 不用区分层级
+  - 可以用一个队列实现循环算法
+
+- 需要区分层级
+  - 可以用一个队列+记录每一层个数的方法实现循环算法
+  - 两个队列实现循环算法
+
+
+```c++
+vector<int> levelOrder(TreeNode* root) {
+    vector<int> results;
+    deque<TreeNode*> q;
+    TreeNode *p = nullptr;
+    while (!q.empty()) {
+        p = q.front();
+        q.pop_front();
+        if (p) {
+            if (p->left) q.push_back(p->left);
+            if (p->right) q.push_back(p->right);
+            results.push_back(p->val);
+        }
+    }
+
+    return results;
+}
+
+vector<int> levelOrder(TreeNode* root) {
+    vector<int> results;
+    deque<TreeNode*> q;
+    int count;
+    TreeNode *p = nullptr;
+    
+    if (root) q.push_back(root);
+    
+    while (!q.empty()) {
+        count = q.size(); // 当前层的节点个数
+        while (count--) {
+            p = q.front();
+            results.push_back(p->val);
+            q.pop_front();
+            if (p->left) q.push_back(p->left);
+            if (p->right) q.push_back(p->right);
+        }
+    }
+
+    return results;
+}
+```
+
+
+
 ## 二叉堆 Binary Heap
 
 二叉堆 (binary heap) 是一种特殊的堆，二叉堆是完全二叉树或者是近似完全二叉树。二叉堆满足堆特性：父节点的键值总是保持固定的序关系于任何一个子节点的键值，且每个节点的左子树和右子树都是一个二叉堆。

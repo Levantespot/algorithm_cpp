@@ -1,14 +1,15 @@
-# 基本算法
-
-## 一、动态规划 Dynamic Programming
+## 动态规划 Dynamic Programming
 
 ### 基本框架
 
-- 一般形式是求最值，如：求最长递增子序列呀，最小编辑距离
+- 一般形式是求最值
+  - 如：求最长递增子序列呀，最小编辑距离。
+
 - 求解动态规划的核心问题是穷举
   - 存在「重叠子问题」，需要「备忘录」或者「DP table」来优化穷举过程
   - 需要列出正确的「状态转移方程」，才能正确地穷举。
-- 动态规划问题一定会具备「最优子结构」，才能通过子问题的最值得到原问题的最值。
+- 动态规划问题一定会具备「最优子结构」
+  - 「最优子结构」即可以从子问题的最优结果推出更大规模问题的最优结果。
   - 要符合「最优子结构」，子问题间必须互相独立！
 
 
@@ -41,33 +42,6 @@ for 状态1 in 状态1的所有取值：
 - [322. Coin Change](https://leetcode.com/problems/coin-change)
 - [300. Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence)
 - [354. Russian Doll Envelopes](https://leetcode.com/problems/russian-doll-envelopes)
+- [931. Minimum Falling Path Sum](https://leetcode.com/problems/minimum-falling-path-sum/)
 - pass
-
-
-
-## 二、分而治之 Divide and Conquer
-
-
-
-
-
-## 三、贪心算法 Greedy Algorithm
-
-
-
-
-
-## 四、回溯法 Back Tracking Method
-
-
-
-
-
-## 五、分支界限法 Branch and Bound
-
-
-
-
-
-
 
