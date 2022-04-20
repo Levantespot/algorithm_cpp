@@ -35,4 +35,4 @@ def recursion(x) {
 ### 题目
 
 - [206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)
-- pass
+- [92. Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/)pass
