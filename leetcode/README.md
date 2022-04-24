@@ -9,12 +9,20 @@
 - [25. Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/)
   - 循环
   - 分而治之（没思考过）
+- [26. Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
+  - 快慢指针
+- [27. Remove Element](https://leetcode.com/problems/remove-element/)
+  - 快慢指针
+- [**34. Find First and Last Position of Element in Sorted Array**](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
+  - 二分法（细节很多）
 - [46. Permutations](https://leetcode.com/problems/permutations)
   - 回溯法
 - [51. N-Queens](https://leetcode.com/problems/n-queens/)
   - 回溯法
 - [53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray)
   - 动态归化
+- [83. Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/)
+  - 快慢指针
 - [92. Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/)
   - 递归、分而治之
 - [94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal)
@@ -39,6 +47,9 @@
 - [160. Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/)
   - 先计算两个链表长度
   - 拼接两个链表（不易想到）
+- [167. Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)
+  - 左右指针 + 二分搜索
+  - 哈希表
 - [191. Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits)
   - 按位运算
 - [206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)
@@ -47,6 +58,8 @@
 - [234. Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)
   - 栈的使用
   - 快慢指针 + 反转部分链表（没想到，但感觉挺麻烦的）
+- [283. Move Zeroes](https://leetcode.com/problems/move-zeroes/)
+  - 快慢指针
 - [300. Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence)
   - 动态规划
 - [303. Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable/)
@@ -59,16 +72,24 @@
   - 动态规划
 - [354. Russian Doll Envelopes](https://leetcode.com/problems/russian-doll-envelopes)
   - 动态规划
+- [370. Range Addition](https://leetcode.com/problems/range-addition/)✨
+  - 差分数组
 - [509. Fibonacci Number](https://leetcode.com/problems/fibonacci-number)
   - 动态规划
 - [543. Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree)
   - 二叉树遍历+动态规划
-- [560. Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/)
+- [**560. Subarray Sum Equals K**](https://leetcode.com/problems/subarray-sum-equals-k/)
   - 泛化问题：统计一个列表中，有多少对数满足某一条件（之差、之和、之积等等）。
     - 穷举法时间复杂度为 O(N^2)，两重循环一对一对去判断
     - 利用哈希表可以在 O(N) 时间复杂度内解决。
+- [704. Binary Search](https://leetcode.com/problems/binary-search/)
+  - 二分查找
 - [876. Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)
   - 快慢指针
   - 先计数，确定位置
 - [931. Minimum Falling Path Sum](https://leetcode.com/problems/minimum-falling-path-sum/)
   - 动态规划
+- [1094. Car Pooling](https://leetcode.com/problems/car-pooling/)
+  - 差分数组
+- [1109. Corporate Flight Bookings](https://leetcode.com/problems/corporate-flight-bookings/)
+  - 差分数组

@@ -5,7 +5,7 @@ Language : c++
 ### 数据结构
 
 - [位操作](data_structure\Bitwise_Operator.md)
-- [栈和队列](data_structure\Stack_and_Queue.md)
+- [栈&队列](data_structure\Stack_and_Queue.md)
 - [顺序表](data_structure\List.md)
 - [树](data_structure\Tree.md)
 - [图](data_structure\Graph.md)
@@ -14,14 +14,14 @@ Language : c++
 
 ### 算法模板
 
-- 五大基本算法
-  - [动态规划](algorithm/Dynamic_Programming.md)
-  - [分而治之](algorithm/Divide_and_Conquer.md)
-  - [贪心算法](algorithm/Greedy_Algorithm.md)
-  - [回溯法](algorithm/Back_Tracking_Method.md)
-  - [分支界限](algorithm/Branch_and_Bound.md)
-
-- pass
+- [动态规划](algorithm/Dynamic_Programming.md)
+- [分而治之](algorithm/Divide_and_Conquer.md)
+- [贪心算法](algorithm/Greedy_Algorithm.md)
+- [回溯法](algorithm/Back_Tracking_Method.md)
+- [分支界限](algorithm/Branch_and_Bound.md)
+- [查找](algorithm/Search.md)
+  - 二分查找
+- 排序
 
 ### 题目整理
 
