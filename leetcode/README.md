@@ -15,14 +15,26 @@
   - 快慢指针
 - [**34. Find First and Last Position of Element in Sorted Array**](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
   - 二分法（细节很多）
+- [39. Combination Sum](https://leetcode.com/problems/combination-sum/)
+  - 组合，元素无重复可复选，回溯法
+- [40. Combination Sum II](https://leetcode.com/problems/combination-sum-ii/)
+  - 组合，元素可重复不可复选，回溯法
 - [46. Permutations](https://leetcode.com/problems/permutations)
-  - 回溯法
+  - 排列，元素无重复不可复选，回溯法
+- [47. Permutations II](https://leetcode.com/problems/permutations-ii/)
+  - 排列，元素可重复不可复选，回溯法
 - [51. N-Queens](https://leetcode.com/problems/n-queens/)
   - 回溯法
 - [53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray)
   - 动态归化
+- [77. Combinations](https://leetcode.com/problems/combinations/)
+  - 组合，元素无重复不可复选，回溯法
+- [78. Subsets](https://leetcode.com/problems/subsets/)
+  - 子集，元素无重复不可复选，回溯法
 - [83. Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/)
   - 快慢指针
+- [90. Subsets II](https://leetcode.com/problems/subsets-ii/)
+  - 子集，元素可重复不可复选，回溯法
 - [92. Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/)
   - 递归、分而治之
 - [94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal)
@@ -55,6 +67,8 @@
 - [206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)
   - 循环反转
   - 递归反转
+- [216. Combination Sum III](https://leetcode.com/problems/combination-sum-iii/)
+  - 组合，元素无重复不可复选，回溯法
 - [234. Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)
   - 栈的使用
   - 快慢指针 + 反转部分链表（没想到，但感觉挺麻烦的）
