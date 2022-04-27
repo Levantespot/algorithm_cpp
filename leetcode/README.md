@@ -44,6 +44,8 @@
 - [104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree)
   - 回溯法（没思考）
   - 动态规划法
+- [111. Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/)
+  - BFS
 - [136. Single Number](https://leetcode.com/problems/single-number/)
   - 按位运算
 - [141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)

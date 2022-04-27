@@ -14,13 +14,15 @@ Language : c++
 
 ### 算法模板
 
+- [总：思考与总结](algorithm/Summary.md)
 - [动态规划](algorithm/Dynamic_Programming.md)
 - [分而治之](algorithm/Divide_and_Conquer.md)
 - [贪心算法](algorithm/Greedy_Algorithm.md)
 - [回溯法](algorithm/Back_Tracking_Method.md)
 - [分支界限](algorithm/Branch_and_Bound.md)
-- [查找](algorithm/Search.md)
-  - 二分查找
+- [搜索&查找](algorithm/Search.md)
+  - 线性表
+  - 树
 - 排序
 
 ### 题目整理
