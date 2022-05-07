@@ -1,5 +1,7 @@
 ### LeetCode 题目
 
+- [5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
+  - 双指针
 - [19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)
   - 遍历链表
 - [21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)
@@ -27,6 +29,8 @@
   - 回溯法
 - [53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray)
   - 动态归化
+- **[76. Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)**
+  - 滑动窗口、字符串匹配
 - [77. Combinations](https://leetcode.com/problems/combinations/)
   - 组合，元素无重复不可复选，回溯法
 - [78. Subsets](https://leetcode.com/problems/subsets/)
@@ -90,6 +94,8 @@
   - 动态规划
 - [370. Range Addition](https://leetcode.com/problems/range-addition/)✨
   - 差分数组
+- [438. Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/)
+  - 滑动窗口、字符串匹配
 - [509. Fibonacci Number](https://leetcode.com/problems/fibonacci-number)
   - 动态规划
 - [543. Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree)
@@ -98,6 +104,8 @@
   - 泛化问题：统计一个列表中，有多少对数满足某一条件（之差、之和、之积等等）。
     - 穷举法时间复杂度为 O(N^2)，两重循环一对一对去判断
     - 利用哈希表可以在 O(N) 时间复杂度内解决。
+- [567. Permutation in String](https://leetcode.com/problems/permutation-in-string/)
+  - 滑动窗口、字符串匹配
 - [704. Binary Search](https://leetcode.com/problems/binary-search/)
   - 二分查找
 - [876. Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)
