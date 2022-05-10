@@ -68,6 +68,8 @@
 - [167. Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)
   - 左右指针 + 二分搜索
   - 哈希表
+- [188. Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/)
+  - 动态规划
 - [191. Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits)
   - 按位运算
 - [206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)
