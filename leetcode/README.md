@@ -50,6 +50,12 @@
   - 动态规划法
 - [111. Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/)
   - BFS
+- [121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
+  - 三维动态规划
+- [122. Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)
+  - 三维动态规划
+- [123. Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/)
+  - 三维动态规划
 - [136. Single Number](https://leetcode.com/problems/single-number/)
   - 按位运算
 - [141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)
@@ -69,7 +75,7 @@
   - 左右指针 + 二分搜索
   - 哈希表
 - [188. Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/)
-  - 动态规划
+  - 三维动态规划
 - [191. Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits)
   - 按位运算
 - [206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)
@@ -110,6 +116,8 @@
   - 滑动窗口、字符串匹配
 - [704. Binary Search](https://leetcode.com/problems/binary-search/)
   - 二分查找
+- [875. Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/)
+  - 二分查找
 - [876. Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)
   - 快慢指针
   - 先计数，确定位置
@@ -119,3 +127,5 @@
   - 差分数组
 - [1109. Corporate Flight Bookings](https://leetcode.com/problems/corporate-flight-bookings/)
   - 差分数组
+- [1011. Capacity To Ship Packages Within D Days](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/)
+  - 二分搜索

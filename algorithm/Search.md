@@ -2,6 +2,11 @@
 
 目的：遍历结构，找到满足条件的目标 `target`，返回目标值或者路径。
 
+拓展应用：
+
+1. 需要一次次尝试，且尝试结果有递增、递减特性，因此可以用二分搜索减少尝试次数
+   - [875. Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/)
+
 ### 二分搜索 Binary Search
 
 1. 首先要明确自己的「搜索区间」是开还是闭，「搜索区间」影响：
@@ -17,8 +22,8 @@
 int binary_search(vector<int>& nums, int target) {
     int left = 0, right = nums.size()-1, mid;  // attention
 
-    mid = left + (right-left)/2;
     while (left <= right) { // attention
+        mid = left + (right-left)/2;
         if (nums[mid] == target) {
             break;
         } else if (nums[mid] < target) {
@@ -26,9 +31,64 @@ int binary_search(vector<int>& nums, int target) {
         } else {
             right = mid-1; // attention
         }
+    }
+    return (nums[mid] == target) ? mid : -1;
+}
+
+// 寻找左侧边界的二分查找，即 1,2,2,2,3 找 2，返回索引为 1
+int binary_search_left(vector<int>& nums, int target) {
+    int left = 0, right = nums.size()-1, mid;  // attention
+
+    mid = left + (right-left)/2;
+    while (left <= right) { // attention
+        if (nums[mid] == target && (mid == 0 || nums[mid-1] != target)) {
+            break;
+        } else if (nums[mid] < target) {
+            left = mid+1; // attention
+        } else if (nums[mid] > target || (nums[mid] == target && nums[mid-1] == target)){
+            right = mid-1; // attention
+        }
         mid = (left + right) / 2;
     }
     return (nums[mid] == target) ? mid : -1;
+}
+
+// 左边界优化版本
+int binary_search_left(vector<int>& nums, int target) {
+    int left = 0, right = nums.size()-1, mid;  // attention
+
+    mid = left + (right-left)/2;
+    while (left <= right) { // attention
+        mid = (left + right) / 2;
+        if (nums[mid] == target) {
+            right = mid-1; // 收缩右边，因为要找左边界
+        } else if (nums[mid] < target) {
+            left = mid+1;
+        } else if (nums[mid] > target){
+            right = mid-1;
+        }
+    }
+    if (left == nums.size() || right == -1) return -1;
+    return (nums[left] == target) ? left : -1;
+}
+
+// 寻找右侧边界的二分查找，即 1,2,2,2,3 找 2，返回索引为 3
+int binary_search_right(vector<int>& nums, int target) {
+    int left = 0, right = nums.size()-1, mid;  // attention
+
+    mid = left + (right-left)/2;
+    while (left <= right) { // attention
+        mid = (left + right) / 2;
+        if (nums[mid] == target) {
+            left = mid+1;
+        } else if (nums[mid] < target) {
+            left = mid+1;
+        } else if (nums[mid] > target){
+            right = mid-1;
+        }
+    }
+    if (left == nums.size() || right == -1) return -1;
+    return (nums[right] == target) ? right : -1;
 }
 ```
 

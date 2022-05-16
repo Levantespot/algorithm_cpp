@@ -35,7 +35,9 @@ for 状态1 in 状态1的所有取值：
 			直到转移到我们需要的状态，return dp[最终状态]
 ```
 
+需要注意的事项：
 
+- 如果状态转移方程是斜着更新的，注意 `mem` 矩阵最后一列有没有被检测到。通常是因为 `mem` 少考虑了一维，见 [188. Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/)。少考虑一维的话，可能需要额外增加一些比较项，在一些题里面会导致考虑更加困难，见 [309. Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/)，所以最好见到斜着更新的状态转移方程就改变一下 `mem` 的定义方式。
 
 ### 题目
 
