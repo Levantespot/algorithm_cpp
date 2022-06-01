@@ -35,7 +35,7 @@ int binary_search(vector<int>& nums, int target) {
     return (nums[mid] == target) ? mid : -1;
 }
 
-// 寻找左侧边界的二分查找，即 1,2,2,2,3 找 2，返回索引为 1
+// 寻找左侧边界的二分查找（容易理解，但是计算量大一点），即 1,2,2,2,3 找 2，返回索引为 1
 int binary_search_left(vector<int>& nums, int target) {
     int left = 0, right = nums.size()-1, mid;  // attention
 
@@ -54,40 +54,39 @@ int binary_search_left(vector<int>& nums, int target) {
 }
 
 // 左边界优化版本
+// 思路是先去找正确位置的左边一位，找到后 left=mid=right，然后不满足条件导致 left+=1，即正确的位置，然后退出循环
+// 退出循环的条件为 mid=left=right+1
+// 如果没找到，则返回第一个比目标大的位置（可能为 nums.size()）
 int binary_search_left(vector<int>& nums, int target) {
     int left = 0, right = nums.size()-1, mid;  // attention
 
-    mid = left + (right-left)/2;
     while (left <= right) { // attention
-        mid = (left + right) / 2;
-        if (nums[mid] == target) {
-            right = mid-1; // 收缩右边，因为要找左边界
-        } else if (nums[mid] < target) {
-            left = mid+1;
-        } else if (nums[mid] > target){
-            right = mid-1;
+        mid = left + (right-left)/2;
+        if (nums[mid] >= target) {
+            right = mid-1; //
+        } else { // if (nums[mid] < target)
+            left = mid+1; // 最后
         }
     }
-    if (left == nums.size() || right == -1) return -1;
+    if (left == nums.size()) return -1;
     return (nums[left] == target) ? left : -1;
 }
 
 // 寻找右侧边界的二分查找，即 1,2,2,2,3 找 2，返回索引为 3
+// 退出循环的条件为 mid=right=left-1
+// 如果没找到，则返回第一个比目标小的位置（可能为 -1）
 int binary_search_right(vector<int>& nums, int target) {
     int left = 0, right = nums.size()-1, mid;  // attention
 
-    mid = left + (right-left)/2;
     while (left <= right) { // attention
-        mid = (left + right) / 2;
-        if (nums[mid] == target) {
+        mid = left + (right-left)/2;
+        if (nums[mid] <= target) {
             left = mid+1;
-        } else if (nums[mid] < target) {
-            left = mid+1;
-        } else if (nums[mid] > target){
+        } else { // if (nums[mid] > target)
             right = mid-1;
         }
     }
-    if (left == nums.size() || right == -1) return -1;
+    if (right == -1) return -1;
     return (nums[right] == target) ? right : -1;
 }
 ```

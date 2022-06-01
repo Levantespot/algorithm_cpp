@@ -83,6 +83,8 @@
   - 递归反转
 - [216. Combination Sum III](https://leetcode.com/problems/combination-sum-iii/)
   - 组合，元素无重复不可复选，回溯法
+- [226. Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)
+  - 二叉树反转
 - [234. Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)
   - 栈的使用
   - 快慢指针 + 反转部分链表（没想到，但感觉挺麻烦的）
@@ -100,8 +102,13 @@
   - 动态规划
 - [354. Russian Doll Envelopes](https://leetcode.com/problems/russian-doll-envelopes)
   - 动态规划
-- [370. Range Addition](https://leetcode.com/problems/range-addition/)✨
+- [370. Range Addition](https://leetcode.com/problems/range-addition/)（付费题）
   - 差分数组
+- [380. Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1/)
+  - 哈希 + 数组
+  - 难点在于如何在 O(1) 时间内删除数组的一个元素，方法是把元素交换到末尾，然后删除末尾元素。
+- [410. Split Array Largest Sum](https://leetcode.com/problems/split-array-largest-sum/)
+  - 二分法
 - [438. Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/)
   - 滑动窗口、字符串匹配
 - [509. Fibonacci Number](https://leetcode.com/problems/fibonacci-number)
@@ -116,6 +123,11 @@
   - 滑动窗口、字符串匹配
 - [704. Binary Search](https://leetcode.com/problems/binary-search/)
   - 二分查找
+- [710. Random Pick with Blacklist](https://leetcode.com/problems/random-pick-with-blacklist/)
+  - 数组 + 哈希表
+- [870. Advantage Shuffle](https://leetcode.com/problems/advantage-shuffle/)
+  - 二分法（用例过，但超时）
+  - 双指针 + 哈希
 - [875. Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/)
   - 二分查找
 - [876. Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)
