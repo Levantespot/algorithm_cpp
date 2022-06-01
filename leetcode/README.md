@@ -48,8 +48,16 @@
 - [104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree)
   - 回溯法（没思考）
   - 动态规划法
+- [105. Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
+  - 从先序+中序 构造二叉树
+- [106. Construct Binary Tree from Inorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/)
+  - 从中序+后序 构造二叉树
 - [111. Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/)
   - BFS
+- [114. Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/)
+  - 二叉树 + 遍历
+- [116. Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/)
+  - 二叉树 + 队列
 - [121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
   - 三维动态规划
 - [122. Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)
@@ -84,7 +92,7 @@
 - [216. Combination Sum III](https://leetcode.com/problems/combination-sum-iii/)
   - 组合，元素无重复不可复选，回溯法
 - [226. Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)
-  - 二叉树反转
+  - 二叉树反转 + 分解
 - [234. Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)
   - 栈的使用
   - 快慢指针 + 反转部分链表（没想到，但感觉挺麻烦的）
@@ -121,6 +129,8 @@
     - 利用哈希表可以在 O(N) 时间复杂度内解决。
 - [567. Permutation in String](https://leetcode.com/problems/permutation-in-string/)
   - 滑动窗口、字符串匹配
+- [654. Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/)
+  - 构造二叉树
 - [704. Binary Search](https://leetcode.com/problems/binary-search/)
   - 二分查找
 - [710. Random Pick with Blacklist](https://leetcode.com/problems/random-pick-with-blacklist/)
@@ -133,6 +143,9 @@
 - [876. Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)
   - 快慢指针
   - 先计数，确定位置
+- [889. Construct Binary Tree from Preorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-postorder-traversal/)
+  - 构造二叉树
+  - 先序+后序
 - [931. Minimum Falling Path Sum](https://leetcode.com/problems/minimum-falling-path-sum/)
   - 动态规划
 - [1094. Car Pooling](https://leetcode.com/problems/car-pooling/)
